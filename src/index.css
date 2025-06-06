@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @font-face {
+  font-family: "DINNextLTArabic";
+  src: url("/fonts/DINNextLTArabic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+
+* {
+  @apply m-0 p-0;
+  box-sizing: border-box;
+  font-family: "Cairo" ;
+}
+
+body {
+  user-select: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+}
+
+
+/* scroll bar */
+::-webkit-scrollbar {
+  @apply w-[8px] h-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-full bg-orange-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-orange-600 rounded-full;
+}
+
+
+
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.anime{
+  transition: all 0.4s ease-in-out;
+}
